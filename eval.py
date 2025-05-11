@@ -56,7 +56,6 @@ plt.tight_layout()
 plt.savefig("output/prompt_embeddings_tsne.png")
 
 labels = ['Human Prompt', 'Enhanced Prompt']
-scores = [0.52, 0.68]
 
 plt.figure(figsize=(6, 4))
 plt.bar(labels, scores, color=['gray', 'blue'])

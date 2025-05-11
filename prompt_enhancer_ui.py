@@ -17,10 +17,7 @@ vectors = data['vectorized_prompts']
 prompts = data['combined_prompts']
 
 llama_model = init_llama(model_path="/home/vignesh/Desktop/NLP/tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf")
-human_bleu_list = [0.4, 0.3,0.2]
-enhanced_bleu_list = [0.5, 0.6]
-human_bleU = random.choice(human_bleu_list)
-enhanced_bleU = random.choice(enhanced_bleu_list)
+
 
 def generate_enhanced_prompt(model, user_input):
     system_prompt = (
